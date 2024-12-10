@@ -1,0 +1,80 @@
+/* Algemene container styling */
+#container {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Zoekveld, knop en dropdown styling */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#zoekveld, #zoekknop, #regionFilter {
+    width: 100%;
+    max-width: 350px; /* Limiteer de breedte */
+    height: 45px;
+    border-radius: 5px;
+}
+#zoekveld {
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+#zoekknop {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+#zoekknop:hover {
+    background-color: #0056b3;
+}
+#regionFilter {
+    border: 1px solid #ced4da;
+    padding: 5px;
+}
+/* Responsiviteit */
+@media (max-width: 768px) {
+    #container {
+        padding: 15px;
+    }
+    #zoekveld, #zoekknop, #regionFilter {
+        max-width: 100%;
+    }
+}
+#vlagimg {
+    width: 300px;
+    height: 180px;
+    max-width: 100%;
+
+}
+@media (max-width: 1024px) {
+    #vlagimg {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    #vlagimg {
+        width: 100%;
+    }
+}
+.card-img-top {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+.card {
+    margin: auto; /* Pas dit aan voor meer of minder ruimte */
+}
+.custom-width-filter {
+    width: 300px; /* Pas aan naar gewenste breedte */
+}
+.custom-width-search {
+    flex-grow: 1; /* Laat de zoekbalk de rest van de ruimte innemen */
+    max-width: 700px; /* Optionele limiet op de breedte */
+}
+
